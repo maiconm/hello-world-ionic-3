@@ -1,11 +1,56 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Test of components
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content
+  class="card-background-page"
+  padding
+>
+  <button
+    ion-button
+    color="danger"
+    (click)="showConfirm()"
+  >
+    Danger
+  </button>
+
+  <ion-card>
+    <img src="../../assets/imgs/playstation.png"/>
+    <div class="card-title">PlayStation</div>
+    <div class="card-subtitle">Live in your world, play in our</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="../../assets/imgs/tumblr_o39keatWg21qbvx0xo1_500.gif"/>
+    <div class="card-title">I like PlayStation</div>
+    <div class="card-subtitle">...</div>
+  </ion-card>
+
+  <ion-fab right bottom>
+      <button
+        ion-fab
+        color="light"
+      >
+        <ion-icon name="arrow-dropleft"></ion-icon>
+      </button>
+      <ion-fab-list side="left">
+        <button ion-fab>
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+        <button ion-fab>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button>
+        <button ion-fab>
+          <ion-icon name="logo-vimeo"></ion-icon>
+        </button>
+        <button ion-fab>
+          <ion-icon name="logo-googleplus"></ion-icon>
+        </button>
+      </ion-fab-list>
+    </ion-fab>
 
 </ion-content>
